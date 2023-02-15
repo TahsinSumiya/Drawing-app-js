@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="paint.css">
+</head>
+<body>
+ <div class="container">
+   <section class="tools-board">
+       <div class="row">
+         <label class="title">Shapes</label>
+         <ul class="options">
+
+          <li class="option tool" id="rectangle">
+                <img src="icons/rectangle.svg"> <span>rectangle</span>
+          </li>
+          <li class="option tool" id="circle">
+            <img src="icons/circle.svg"> <span>circle</span>
+         </li>
+         <li class="option tool" id="triangle">
+        <img src="icons/triangle.svg"> <span>triangle</span>
+        </li>
+        
+        <li class="option" >
+            <input type="checkbox" for="fill-color" id="fill-color"> <span>fill color</span>
+        </li>
+    </ul>
+         </div>
+
+
+         <div class="row">
+            <label class="title">Options</label>
+            <ul class="options">
+
+             <li class="option active tool" id="brush">
+                   <img src="icons/brush.svg"> <span>brush</span>
+             </li>
+             <li class="option tool"id="eraser">
+               <img src="icons/eraser.svg" > <span>eraser</span>
+            </li>
+            <li class="option tool" id="line">
+              <img src="icons/lines.jpg" class="line"> <span>line</span>
+              </li>
+            
+           <li class="option">
+               <input type="range" id="size-slider" min="1" max="30" value="5">
+           </li>
+        </ul>
+            </div>
+
+            <div class="row colors">
+                <label class="title">Colors</label>
+                <ul class="options">
+                  <li class="option color"></li>  
+                  <li class="option color"></li>  
+                  <li class="option color selected"></li>  
+                  <li class="option color"></li>  
+                  <li class="option color">
+                    <input type="color" id="color-picker" value="green">
+                  </li>  
+                
+                </ul>
+           </div>
+
+
+           <div class="row buttons">
+           <button class="clear-canvas">Clear canvas</button>
+           <button class="save-image">Save image</button>
+           </div>
+
+       
+
+        </section>
+        <section class="drawing-board">
+          <canvas></canvas>
+        </section>
+   </div>
+
+    <script src="paint.js"></script>
+</body>
+</html>
