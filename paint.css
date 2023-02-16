@@ -86,8 +86,8 @@ section{
 }
 .color:nth-child(5){
     
-    /* background-image: linear-gradient(to right, red,rgb(5, 35, 99),rgb(25, 200, 212),green,blue,indigo,violet); */
-    background-color:green;
+    background-image: linear-gradient(to right, red,rgb(5, 35, 99),rgb(25, 200, 212),green,blue,indigo,violet);
+    /* background-color:green; */
     /* border: 1px double rgb(0, 0, 0); */
 }
 .color:hover{
